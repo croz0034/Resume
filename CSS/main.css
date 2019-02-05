@@ -37,6 +37,7 @@
     color: white;
     position: absolute;
     font-size: 20px;
+    background: blue;
     top: 15px;
     z-index: 10;
 }
@@ -44,6 +45,7 @@
     color: white;
     position: absolute;
     font-size: 20px;
+    background: blue;
     right: 15px;
     top: 15px;
     z-index: 10;
