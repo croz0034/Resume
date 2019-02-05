@@ -168,14 +168,14 @@ let resumeContents = {
         },
             {
                 Name: "The Singularity",
-                URL: "https://github.com/croz0034/ReactiveFire",
-                Pages: "https://croz0034.github.io/ReactiveFire/",
+                URL: "https://github.com/croz0034/CordovaFinal",
+                Pages: "https://croz0034.github.io/CordovaFinal/",
                 Description: ["A javascript list/description project with similar to 'project pheonix.' ", " It was made to be put inside a cordova wrapper, and uploaded onto an android device."]
         },
             {
                 Name: "Firebase with React",
-                URL: "https://github.com/croz0034/CordovaFinal",
-                Pages: "https://croz0034.github.io/CordovaFinal/",
+                URL: "https://github.com/croz0034/ReactiveFire",
+                Pages: "https://croz0034.github.io/ReactiveFire/",
                 Description: ["The project goal was to make a project using the 'react' framework, that also incorporated google's 'firebase' for data storage", "We were also assigned a 'react native' project at the same time. I used this one to test features for that one, which is why the interface does not impress", "I managed to add touch controlls without refferencing the DOM (because the DOM does not exist in react native)", " And took it one step further, using key inputs rather than the values from the text input fields to build the input strings"]
         }
         ],
@@ -184,7 +184,7 @@ let resumeContents = {
                 Name: "Function Shortcuts",
                 URL: "https://github.com/croz0034/FunctionShortcut",
                 Pages: "https://croz0034.github.io/FunctionShortcut/",
-                Description: [
+                Description: ["Many functions intended for desktop",
                 "Started as my attempt to learn how to use touch controlls in javascript, it snowballed from there as I went to learn more.",
                 "Many of the features are implemented on elements during the initialization function, by searching through the document for class name keywords, meaning no further javascript pointers should be necessary.",
                 "I also started toying with the idea of colour pickers, list generators (from JSON objects), and other snippets of code that would be useful for an HTML builder GUI"
@@ -194,7 +194,7 @@ let resumeContents = {
                 Name: "Box Draw",
                 URL: "https://github.com/croz0034/FunctionShortcut",
                 Pages: "https://croz0034.github.io/FunctionShortcut/PlacementTest",
-                Description: [
+                Description: [ "intended for desktop",
                 "This sub-page was my forrays into making a GUI for building HTML",
                 "It fell by the wayside as school began again, and I ran into issues including all the HTML attribute and style options in an easy to use manner"
                 ]
