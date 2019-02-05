@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+/*    overflow: hidden;*/
+}
+.hidden {
+    display: none;
+}
+.min + div {
+    display: none;
+}
+.page {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+/*////////////////// Banner */
+.Banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+    border-bottom: 1px solid black;
+}
+.Banner > h1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 0;
+}
+.Banner > #Navigation {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    z-index: 10;
+}
+.Banner > #Mail {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+}
+
+/*///////////////*/
+.page .NavList{
+    display: block;
+    text-align: center;
+    border: solid 1px black;
+    color: blue;
+    margin-left: -15px;
+}
+.NavList.clicked{
+    display: block;
+    text-align: center;
+    border: solid 1px black;
+    background: lightblue;
+    color: black;
+    
+}
+
+/* Contact*/
+.Contact > h2,h4,ul {
+    margin-left: 15px;
+    padding: 15px;
+}
+.Contact > li {
+    padding: 0;
+}
+/* Project*/
+.Project{
+    border: solid 1px black;
+    margin-left: -15px
+}
+.Card{
+    margin: 5px 5px 5px -10px;
+    border: solid black 1px;
+}
+.Card > p, li{
+    margin: 10px;
+}
