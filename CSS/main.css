@@ -40,6 +40,7 @@
     background: blue;
     top: 15px;
     z-index: 10;
+    border: none;
 }
 .Banner > #Mail {
     color: white;
@@ -49,6 +50,7 @@
     right: 15px;
     top: 15px;
     z-index: 10;
+    border: none;
 }
 
 /*///////////////*/
