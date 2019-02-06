@@ -31,7 +31,11 @@ let Build = {
         to: (ev)=>{
             ev.target.classList.add("clicked");
             document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
-           document.querySelector("#BannerTitle").textContent = ev.target.id; document.querySelector(`.${ev.target.id}`).classList.remove("hidden")
+           document.querySelector("#BannerTitle").textContent = ev.target.id; document.querySelector(`.${ev.target.id}`).classList.remove("hidden");
+            
+            /////////// History stuff
+            history.pushState({}, "Home", window.location)
+            console.log(window.location);
         },
         minimize: (ev)=>{
             let target = ev.target;
@@ -141,6 +145,12 @@ let Build = {
         console.log('ping')
         window.location.href = "mailto:tylercrozman@gmail.com?subject=Resume&body=";
     }
+}
+
+window.onpopstate = (ev)=>{
+    console.log(ev);
+document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
+           document.querySelector("#BannerTitle").textContent = "Navigation"; document.querySelector(`.Navigation`).classList.remove("hidden");
 }
 
 document.addEventListener("DOMContentLoaded", Build.init)
