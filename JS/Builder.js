@@ -1,11 +1,19 @@
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 let Build = {
     PageHeight : (window.innerHeight - 50),
-    init: (ev)=>{
+    init: async (ev)=>{
+        console.log(history.state)
         Build.Nav.init(ev);
         Build.ContactInfo();
         Build.Work();
         Build.Education();
         Build.Projects();
+        if(!iOS){document.getElementById("Navigation").classList.add("hidden");}
+        if(history.state){
+        Build.Nav.Warp(history.state.CurrentPage)}
+        else{
+            Build.Nav.Warp("Navigation")
+        }
     },
     Nav: {
         init: (ev)=>{
@@ -30,12 +38,10 @@ let Build = {
         },
         to: (ev)=>{
             ev.target.classList.add("clicked");
-            document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
-           document.querySelector("#BannerTitle").textContent = ev.target.id; document.querySelector(`.${ev.target.id}`).classList.remove("hidden");
+            Build.Nav.Warp(ev.target.id);
             
             /////////// History stuff
-            history.pushState({}, "Home", window.location)
-            console.log(window.location);
+            history.pushState({CurrentPage: ev.target.id}, "Home", window.location)
         },
         minimize: (ev)=>{
             let target = ev.target;
@@ -51,6 +57,11 @@ let Build = {
         },
         back: (ev)=>{
             history.back()
+        },
+        Warp: (location)=>{
+           console.log(location) ;
+            document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
+     document.querySelector("#BannerTitle").textContent = location; document.querySelector(`.${location}`).classList.remove("hidden");
         }
     },
     ContactInfo: ()=>{
@@ -151,9 +162,14 @@ let Build = {
 }
 
 window.onpopstate = (ev)=>{
-    console.log(ev);
-document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
-           document.querySelector("#BannerTitle").textContent = "Navigation"; document.querySelector(`.Navigation`).classList.remove("hidden");
+            console.log('ping')
+    console.log(history.state)
+        if(history.state){
+        Build.Nav.Warp(history.state.CurrentPage)}
+        else{
+            Build.Nav.Warp("Navigation")
+        }
 }
 
 document.addEventListener("DOMContentLoaded", Build.init)
+console.log(window.location.href)
