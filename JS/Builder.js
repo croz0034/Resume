@@ -22,7 +22,7 @@ let Build = {
             element.style["font-size"] = "20px";
         })
         },
-        links: ()=>{ document.querySelector("#Navigation").addEventListener("click", Build.Nav.to);
+        links: ()=>{ document.querySelector("#Navigation").addEventListener("click", Build.Nav.back);
         document.querySelector('#Mail').addEventListener("click", Build.Mail);
         document.querySelectorAll(".NavList").forEach((link)=>{
             link.addEventListener("click", Build.Nav.to)
@@ -48,6 +48,9 @@ let Build = {
             target.classList.remove("min");
             target.querySelector(".Minimizer").textContent = "-";
             }
+        },
+        back: (ev)=>{
+            history.back()
         }
     },
     ContactInfo: ()=>{

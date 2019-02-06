@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
     margin: 0;
-/*    overflow: hidden;*/
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font: sans-serif;
 }
 .hidden {
     display: none;
@@ -73,7 +75,6 @@
 /* Contact*/
 .Contact > h2,h4,ul {
     margin-left: 15px;
-    padding: 15px;
 }
 .Contact > li {
     padding: 0;
