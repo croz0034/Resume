@@ -134,8 +134,8 @@ let Build = {
         Build.ProjectFiller(zone, resumeContents.Projects.School)
         zone = document.querySelector(".Extracurricular");
         Build.ProjectFiller(zone, resumeContents.Projects["Extracurricular_Learning"])
-        zone = document.querySelector(".Hoby");
-        Build.ProjectFiller(zone, resumeContents.Projects.Hoby)
+        zone = document.querySelector(".Hobby");
+        Build.ProjectFiller(zone, resumeContents.Projects.Hobby)
         
 },
     ProjectFiller: (zone, Data)=>{

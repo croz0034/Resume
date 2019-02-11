@@ -11,7 +11,7 @@ let resumeContents = {
             },
             University: {
                 Location: "Carleton University",
-                Program: "Honours in Philosophy, minor in Psycology",
+                Program: "Honours in Philosophy, minor in Psychology",
                 Graduated: "2012"
             },
             College: {
@@ -161,7 +161,7 @@ let resumeContents = {
     Projects: {
         School: [
             {
-                Name: "Movie Reccomendations",
+                Name: "Movie Recommendations",
                 URL: "https://github.com/croz0034/Movie-Recommendations",
                 Pages: "https://croz0034.github.io/Movie-Recommendations/",
                 Description: "We were learning to use online API and make fetch calls."
@@ -176,7 +176,7 @@ let resumeContents = {
                 Name: "Firebase with React",
                 URL: "https://github.com/croz0034/ReactiveFire",
                 Pages: "https://croz0034.github.io/ReactiveFire/",
-                Description: ["The project goal was to make a project using the 'react' framework, that also incorporated google's 'firebase' for data storage", "We were also assigned a 'react native' project at the same time. I used this one to test features for that one, which is why the interface does not impress", "I managed to add touch controlls without refferencing the DOM (because the DOM does not exist in react native)", " And took it one step further, using key inputs rather than the values from the text input fields to build the input strings"]
+                Description: ["The project goal was to make a project using the 'react' framework, that also incorporated google's 'firebase' for data storage", "We were also assigned a 'react native' project at the same time. I used this one to test features for that one, which is why the interface does not impress", "I managed to add touch controls without refferencing the DOM (because the DOM does not exist in react native)", " And took it one step further, using key inputs rather than the values from the text input fields to build the input strings"]
         }
         ],
         "Extracurricular_Learning": [
@@ -185,7 +185,7 @@ let resumeContents = {
                 URL: "https://github.com/croz0034/FunctionShortcut",
                 Pages: "https://croz0034.github.io/FunctionShortcut/",
                 Description: ["Many functions intended for desktop",
-                "Started as my attempt to learn how to use touch controlls in javascript, it snowballed from there as I went to learn more.",
+                "Started as my attempt to learn how to use touch controls in javascript, it snowballed from there as I went to learn more.",
                 "Many of the features are implemented on elements during the initialization function, by searching through the document for class name keywords, meaning no further javascript pointers should be necessary.",
                 "I also started toying with the idea of colour pickers, list generators (from JSON objects), and other snippets of code that would be useful for an HTML builder GUI"
                 ]
@@ -205,7 +205,7 @@ let resumeContents = {
                 Pages: "https://croz0034.github.io/BlockPush/",
                 Description: [
                 "I wanted to see if I could make a javascript generated game with what I knew.",
-                "It includes swipe controlls for touch screens and WASD movement for keyboards",
+                "It includes swipe controls for touch screens and WASD movement for keyboards",
                 "Levels are stored in the cloud on firebase, for ease of acess on multiple devices",
                 "Levels themselves are relatively compact JSON objects (the main map being an array of arrays of 3character strings)",
                 "Terrain effects are extrapolated through those 3 character strings, by targetting corresponding methods through their string literals in the code.",
@@ -213,7 +213,7 @@ let resumeContents = {
                 ]
         }
         ],
-        Hoby: [
+        Hobby: [
             {
                 Name: "Project Pheonix",
                 URL: "https://github.com/croz0034/Project-Pheonix",
