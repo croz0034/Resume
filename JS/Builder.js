@@ -1,4 +1,4 @@
-var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+//var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 let Build = {
     PageHeight : (window.innerHeight - 50),
     init: async (ev)=>{
@@ -8,7 +8,7 @@ let Build = {
         Build.Work();
         Build.Education();
         Build.Projects();
-        if(!iOS){document.getElementById("Navigation").classList.add("hidden");}
+//        if(!iOS){document.getElementById("Navigation").classList.add("hidden");}
         if(history.state){
         Build.Nav.Warp(history.state.CurrentPage)}
         else{

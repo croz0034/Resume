@@ -144,8 +144,8 @@ let resumeContents = {
             time: "2009 - present",
             description: "Dish washer, and general cleaner. I was a bartender too, but that role was merged with hosting.",
             refference: {
-                name: "",
-                number: ""
+                name: "Thomas Willox",
+                number: "504-795-4218"
             }
         },
         "Freelance": {
