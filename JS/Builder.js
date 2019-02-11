@@ -9,10 +9,13 @@ let Build = {
         Build.Education();
         Build.Projects();
 //        if(!iOS){document.getElementById("Navigation").classList.add("hidden");}
-        if(history.state){
-        Build.Nav.Warp(history.state.CurrentPage)}
+        
+ document.getElementById("Navigation").classList.add("hidden")
+        if(history.state && history.state.CurrentPage != "Navigation"){
+        Build.Nav.Warp(history.state.CurrentPage);
+            document.getElementById("Navigation").classList.remove("hidden")}
         else{
-            Build.Nav.Warp("Navigation")
+            Build.Nav.Warp("Navigation");
         }
     },
     Nav: {
@@ -39,7 +42,7 @@ let Build = {
         to: (ev)=>{
             ev.target.classList.add("clicked");
             Build.Nav.Warp(ev.target.id);
-            
+            document.getElementById("Navigation").classList.remove("hidden")
             /////////// History stuff
             history.pushState({CurrentPage: ev.target.id}, "Home", window.location)
         },
@@ -55,7 +58,7 @@ let Build = {
             target.querySelector(".Minimizer").textContent = "-";
             }
         },
-        back: (ev)=>{
+        back: (ev)=>{document.getElementById("Navigation").classList.add("hidden")
             history.back()
         },
         Warp: (location)=>{
@@ -162,10 +165,9 @@ let Build = {
 }
 
 window.onpopstate = (ev)=>{
-            console.log('ping')
-    console.log(history.state)
         if(history.state){
-        Build.Nav.Warp(history.state.CurrentPage)}
+        Build.Nav.Warp(history.state.CurrentPage)
+        }
         else{
             Build.Nav.Warp("Navigation")
         }
