@@ -4,21 +4,21 @@ let resumeContents = {
         Phone: "(613) 599-6131",
         Cell: "613-581-6825",
         Education: {
-            Highschool: {
-                Location: "A.Y. Jackson",
-                Program: "Highschool",
-                Graduated: "2009"
+            College: {
+                Location: "Algonquin",
+                Program: "Mobile application design and development",
+                Graduated: "(in progress) 2019"
             },
             University: {
                 Location: "Carleton University",
                 Program: "Honours in Philosophy, minor in Psychology",
                 Graduated: "2012"
             },
-            College: {
-                Location: "Algonquin",
-                Program: "Mobile application design and development",
-                Graduated: "(in progress) 2019"
-            },
+            Highschool: {
+                Location: "A.Y. Jackson",
+                Program: "Highschool",
+                Graduated: "2009"
+            }
         },
         Marks: {
             "Level One:": [
@@ -139,15 +139,6 @@ let resumeContents = {
     Strengths: ["Quick learner", "Hard worker", "My code grows cleaner by the day"],
     Weaknesses: ["Too ambitious with pet projects.", "Focus is mainly on functionality, and not aesthetics."],
     Work: {
-        "Part time": {
-            Location: "The Works (Kanata)",
-            time: "2009 - present",
-            description: "Dish washer, and general cleaner. I was a bartender too, but that role was merged with hosting.",
-            refference: {
-                name: "Thomas Willox",
-                number: "504-795-4218"
-            }
-        },
         "Freelance": {
             Location: "Home",
             time: "Christmas break 2018",
@@ -155,6 +146,15 @@ let resumeContents = {
             refference: {
                 name: "Shawn Boxiao Liu",
                 number: "(613) 794-6866"
+            }
+        },
+        "Part time": {
+            Location: "The Works (Kanata)",
+            time: "2009 - present",
+            description: "Dish washer, and general cleaner. I was a bartender too, but that role was merged with hosting.",
+            refference: {
+                name: "Thomas Willox",
+                number: "504-795-4218"
             }
         }
     },
@@ -239,5 +239,6 @@ let resumeContents = {
             "Double elimination has been a consistent headache due to it's late introduction."]
         }
         ]
-    }
+    },
+
 }

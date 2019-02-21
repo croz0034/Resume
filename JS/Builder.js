@@ -1,4 +1,3 @@
-//var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 let Build = {
     PageHeight : (window.innerHeight - 50),
     init: async (ev)=>{
@@ -8,7 +7,6 @@ let Build = {
         Build.Work();
         Build.Education();
         Build.Projects();
-//        if(!iOS){document.getElementById("Navigation").classList.add("hidden");}
         
  document.getElementById("Navigation").classList.add("hidden")
         if(history.state && history.state.CurrentPage != "Navigation"){
@@ -43,7 +41,6 @@ let Build = {
             ev.target.classList.add("clicked");
             Build.Nav.Warp(ev.target.id);
             document.getElementById("Navigation").classList.remove("hidden")
-            /////////// History stuff
             history.pushState({CurrentPage: ev.target.id}, "Home", window.location)
         },
         minimize: (ev)=>{
