@@ -74,7 +74,7 @@
     display: block;
     text-align: center;
     /*border: solid 1px black;*/
-    background: lightblue;
+    background-image: radial-gradient(whitesmoke, #aaa);
     color: black;
 }
 
