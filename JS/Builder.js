@@ -41,6 +41,7 @@ let Build = {
             ev.target.classList.add("clicked");
             Build.Nav.Warp(ev.target.id);
             document.getElementById("Navigation").classList.remove("hidden")
+            document.getElementById("navBg").style.background = "white"
             history.pushState({CurrentPage: ev.target.id}, "Home", window.location)
         },
         minimize: (ev)=>{
@@ -56,6 +57,7 @@ let Build = {
             }
         },
         back: (ev)=>{document.getElementById("Navigation").classList.add("hidden")
+                     document.getElementById("navBg").style.backgroundImage = "linear-gradient(to bottom right, rgb(63,0,127), rgb(126,0,255))"
             history.back()
         },
         Warp: (location)=>{
