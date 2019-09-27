@@ -7,19 +7,135 @@ let resumeContents = {
             College: {
                 Location: "Algonquin",
                 Program: "Mobile application design and development",
-                Graduated: " 2019 (with Honours)",
+                Graduated: "(in progress) 2019"
             },
             University: {
                 Location: "Carleton University",
                 Program: "Honours in Philosophy, minor in Psychology",
-                Graduated: " 2012"
+                Graduated: "2012"
             },
             Highschool: {
                 Location: "A.Y. Jackson",
                 Program: "Highschool",
-                Graduated: " 2009"
+                Graduated: "2009"
             }
         },
+        Marks: {
+            "Level One:": [
+                {
+                    Code: "MAD 8010",
+                    Name: "Digital Citizenship",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9010",
+                    Name: "Graphics Technologies",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9013",
+                    Name: "Cross-Platform Web Development",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9014",
+                    Name: "Cross-Platform Application Development I",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9111",
+                    Name: "Fundamentals of Computer Hardware and Networking",
+                    "Letter Grade": "A+"
+                }],
+            "Level Two:": [
+                {
+                    Code: "DSN 2100M",
+                    Name: "Design Thinking",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "ENL 1813T",
+                    Name: "Communications 1",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9020",
+                    Name: "User Interface Design",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9021",
+                    Name: "Introduction to Object Oriented Programming",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9022",
+                    Name: "Cross-Platform Application Development II",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9023",
+                    Name: "Server-Side Technology for Mobile",
+                    "Letter Grade": "A+"
+                },
+        ],
+            "Level three:": [
+                {
+                    Code: "ENL 8720",
+                    Name: "Technical Report Writing",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9034",
+                    Name: "User Experience Design",
+                    "Letter Grade": "A"
+                },
+                {
+                    Code: "MAD 9132",
+                    Name: "Android Application Development",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9135",
+                    Name: "Developing HTML5  Mobile Applications",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9137",
+                    Name: "iOS Development",
+                    "Letter Grade": "A+"
+                },
+        ],
+            "Level Four:":[
+                
+                {
+                    Code: "MAD 9042",
+                    Name: "Best Practices for Mobile Development",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9143",
+                    Name: "Business for the Mobile Industry",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9145",
+                    Name: "Applied Project",
+                    "Letter Grade": "A+"
+                },
+                {
+                    Code: "MAD 9146",
+                    Name: "Windows Development for Mobile",
+                    "Letter Grade": "A+""
+                },
+                {
+                    Code: "GEN 1957",
+                    Name: "Science Fiction",
+                    "Letter Grade": "A"
+                },
+            ]
+            
+    },
     Strengths: ["Quick learner", "Hard worker", "My code grows cleaner by the day"],
     Weaknesses: ["Too ambitious with pet projects.", "Focus is mainly on functionality, and not aesthetics."],
     Work: {

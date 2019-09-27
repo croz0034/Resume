@@ -39,8 +39,8 @@ let Build = {
         },
         to: (ev)=>{
             ev.target.classList.add("clicked");
-            document.getElementById("Navigation").classList.remove("hidden")
             Build.Nav.Warp(ev.target.id);
+            document.getElementById("Navigation").classList.remove("hidden")
             history.pushState({CurrentPage: ev.target.id}, "Home", window.location)
         },
         minimize: (ev)=>{
@@ -62,8 +62,6 @@ let Build = {
            console.log(location) ;
             document.querySelectorAll(".page").forEach((page)=>{page.classList.add("hidden")})
      document.querySelector("#BannerTitle").textContent = location; document.querySelector(`.${location}`).classList.remove("hidden");
-            if(location == "Navigation"){
-            document.getElementById("Navigation").classList.add("hidden")}
         }
     },
     ContactInfo: ()=>{
@@ -111,8 +109,20 @@ let Build = {
              Graduated:${resumeContents.Education[school].Graduated} </p> <br />`
         })
         stage.innerHTML += `<p><strong > Current Courses </strong> </p>`;
+        let sections = Object.keys(resumeContents.Marks)
         let additions = document.createElement("table");
         stage.appendChild(additions)
+        sections.forEach((semester)=>{
+            additions.innerHTML += `<tr><td></td><td><h4 style="Width: 100%; text-align: center;"> ${semester} </h4></td><td></td></tr>`
+            resumeContents.Marks[semester].forEach((course)=>{
+            let NewElementCourse = document.createElement("tr");
+                NewElementCourse.innerHTML = `
+<td>${course.Code}</td>
+<td>${course.Name}</td>
+<td>${course["Letter Grade"]}</td>`;
+                additions.appendChild(NewElementCourse);
+            })
+        })
     },
     Projects: ()=>{
         document.querySelectorAll(".Project").forEach((zone)=>{zone.addEventListener("click", Build.Nav.minimize)})
