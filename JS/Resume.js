@@ -126,7 +126,7 @@ let resumeContents = {
                 {
                     Code: "MAD 9146",
                     Name: "Windows Development for Mobile",
-                    "Letter Grade": "A+""
+                    "Letter Grade": "A+"
                 },
                 {
                     Code: "GEN 1957",
