@@ -111,27 +111,27 @@ let resumeContents = {
                 {
                     Code: "MAD 9042",
                     Name: "Best Practices for Mobile Development",
-                    "Letter Grade": "In progress"
+                    "Letter Grade": "A+"
                 },
                 {
                     Code: "MAD 9143",
                     Name: "Business for the Mobile Industry",
-                    "Letter Grade": "In progress"
+                    "Letter Grade": "A+"
                 },
                 {
                     Code: "MAD 9145",
                     Name: "Applied Project",
-                    "Letter Grade": "In progress"
+                    "Letter Grade": "A+"
                 },
                 {
                     Code: "MAD 9146",
                     Name: "Windows Development for Mobile",
-                    "Letter Grade": "In progress"
+                    "Letter Grade": "A+"
                 },
                 {
                     Code: "GEN 1957",
                     Name: "Science Fiction",
-                    "Letter Grade": "In progress"
+                    "Letter Grade": "A"
                 },
             ]
             
